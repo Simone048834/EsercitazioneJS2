@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <style>
+            #dvi
+            {
+                font-size: 2vh;
+            }
+            #dvder
+            {
+                font-size: 10vh;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+        </style>
+    <script type="text/javascript">
+        var look = " style=\"color:rgb(138, 10, 10);font-size:20px;\"";
+        function numberLoop()
+        {
+            document.write("<p" + look + ">Numeri Interi</p>");
+            for (let i = 0; i < 10; i++)
+            {
+                divideMe(i);
+            }
+            squareMe();
+        }
+        function squareMe()
+        {
+            document.write("<p" + look + ">Al Quadrato</p>");
+            for (let i = 0; i < 10; i++)
+            {
+                divideMe(i*i);
+            }
+        }
+        function divideMe(nm)
+        {
+            document.write("<p id=\"dvi\">" + nm + "</p>");
+        }
+    </script>
+    </head>
+    <body>
+        <h1>Inizia</h1>
+        <input style="color:rgb(0, 255, 191);font-size:20px;" type="button" value="calcola" onclick="numberLoop()">
+    </body>
+</html>
